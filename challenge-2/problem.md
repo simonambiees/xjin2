@@ -1,28 +1,28 @@
-# Russian Encryption
+# Trust My Files
 
 - Namespace: picoctf/18739f24
-- ID: russian-encryption
+- ID: trust-my-files
 - Type: custom
-- Category: Crypto
+- Category: Forensics
 - Points: 1
 - Templatable: no
 - MaxUsers: 0
 
 ## Description
 
-Oh no! President Joe Biden will not be running in 2024. You are a highly ranked government official and you have just received this news from your co-workers. At the same time, a Russian spy has been captured by CIA. According to the CIA, they've recovered some photos from the spy's personal belongings. As they were more worried about a potential second Trump term, they've chosen to ignore the photos. The photos have come to your pocession and you suspect there might be important information hiding in plain sight...
+Everyone has their opinions on Donald Trump winning a second term. You work for a large media outlet, and one day receives a file from an anonymous source, claiming they have damaging information on President-elect Trump. You decide to take a look to find the secrets.
 
-Download the scanned images of these photos {{url_for("gibberish.zip", "here")}}.
+Download the file {{url_for("latest_scandal.tar.gz", "here")}}.
 
 ## Details
 
 ## Hints
 
-- Download the file, unzip, and play away. What if the Russian spy uses encryption on these images? I've been told their encryption strategy can be twoo secure, if you know what I mean.
+- Download the file and start analysing. Look at the files for hints...
 
 ## Solution Overview
 
-Download `gibberish.zip` and unzip it. XOR the two images together will reveal the flag.
+Download `latest_scandal.tar.gz` and unzip it. Analysing the content of the resulting image can yield two files. One of which, when unzipped, has the flag.
 
 ## Challenge Options
 
@@ -38,10 +38,10 @@ init: true
 
 ## Learning Objective
 
-Test basic knowledge of Two Time Pad
+Test ability to navigate file structure
 
 ## Attributes
 
 - author: Xiao (Simon) Jin
 - organization: CMU
-- event: 18739 F24 CTF DEV 1
+- event: 18739 F24 CTF DEV 2
